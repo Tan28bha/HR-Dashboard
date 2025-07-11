@@ -1,19 +1,20 @@
-import { create } from "zustand";
-import { getRandomDepartment, getRandomRating } from "../utils/mockutils";
+// src/store/userStore.js
 
-export const useUserStore = create((set) => ({
+import { create } from 'zustand';
+
+export const useUserStore = create((set, get) => ({
   users: [],
-  addUser: (user) =>
+  setUsers: (data) => set({ users: data }),
+
+  bookmarks: [],
+  addBookmark: (user) =>
     set((state) => ({
-      users: [
-        {
-          ...user,
-          id: Date.now(), // temporary unique ID
-          department: getRandomDepartment(Date.now()),
-          rating: getRandomRating(),
-        },
-        ...state.users,
-      ],
+      bookmarks: [...state.bookmarks, user],
     })),
-  setUsers: (users) => set({ users }),
+  removeBookmark: (id) =>
+    set((state) => ({
+      bookmarks: state.bookmarks.filter((u) => u.id !== id),
+    })),
+  isBookmarked: (id) =>
+    !!get().bookmarks.find((u) => u.id === id),
 }));
