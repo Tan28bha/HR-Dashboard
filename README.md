@@ -65,12 +65,12 @@ npm run dev
 yarn dev
 
 
-Visit `http://localhost:3000` to view the dashboard.
+Visit http://localhost:3000 to view the dashboard.
 
 
 ## 🧪 API Reference
 
-* **User Data:** `https://dummyjson.com/users?limit=20`
+* **User Data:** https://dummyjson.com/users?limit=20
 * Department and rating are randomly generated via helper functions.
 
 
@@ -93,9 +93,12 @@ Visit `http://localhost:3000` to view the dashboard.
 
 
 
-## 📸 Screenshots
+## 📸 Screenshots<img width="1894" height="896" alt="Screenshot 2025-07-11 174858" src="https://github.com/user-attachments/assets/010d3399-b52c-4c04-bc0c-23478676d84b" />
 
-> Coming soon – you can add screenshots of your layout here
+<img width="1915" height="901" alt="Screenshot 2025-07-11 174731" src="https://github.com/user-attachments/assets/c67c1ae5-b8ee-4670-b96b-27ca88e60e2b" />
+
+<img width="1901" height="906" alt="Screenshot 2025-07-11 174800" src="https://github.com/user-attachments/assets/ea273d27-ce7a-448a-b270-67b9d832b828" />
+
 
 
 
